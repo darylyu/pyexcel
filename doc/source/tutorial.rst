@@ -6,7 +6,7 @@ Sheet: Data Access
 Random access to individual cell
 --------------------------------
 
-To randaomly access a cell of :class:`~pyexcel.Sheet` instance, two syntax are avaialbe::
+To randomly access a cell of :class:`~pyexcel.Sheet` instance, two syntax are available::
 
     sheet[row, column]
 
@@ -19,7 +19,7 @@ The former syntax is handy when you know the row and column numbers. The latter 
 Suppose you have the following data, you can get value 5 by reader[2, 2].
 
 ======= = = =
-Example X Y Z
+Example X Y Za
 a       1 2 3
 b       4 5 6
 c       7 8 9
@@ -430,7 +430,7 @@ You can get columns in reverse sequence as well by calling :meth:`~pyexcel.Sheet
     >>> pyexcel.to_array(sheet.rcolumns())
     [[3.0, 6.0, 9.0], [2.0, 5.0, 8.0], [1.0, 4.0, 7.0]]
 
-Do you want to flatten the data? you can get the content in one dimensional array. If you are interested in playing with one dimensional enurmation, you can check out these functions :meth:`~pyexcel.Sheet.enumerate`, :meth:`~pyexcel.Sheet.reverse`, :meth:`~pyexcel.Sheet.vertical`, and :meth:`~pyexcel.Sheet.rvertical()`::
+Do you want to flatten the data? you can get the content in one dimensional array. If you are interested in playing with one dimensional enumeration, you can check out these functions :meth:`~pyexcel.Sheet.enumerate`, :meth:`~pyexcel.Sheet.reverse`, :meth:`~pyexcel.Sheet.vertical`, and :meth:`~pyexcel.Sheet.rvertical()`::
 
     >>> pyexcel.to_array(sheet.enumerate())
     [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]
